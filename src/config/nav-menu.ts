@@ -1,7 +1,7 @@
 import type {NavMenuConfig} from '@/types';
 
 export const navMenuConfig: NavMenuConfig = {
-	links: [{title: 'Portfolio', href: '/portfolio'}],
+	links: [{title: 'Portfolio', href: '/astro-blog/portfolio'}],
 	// pagesNav: [
 	// 	{
 	// 		title: 'Pages',
@@ -58,29 +58,29 @@ export const navMenuConfig: NavMenuConfig = {
 			items: [
 				{
 					title: 'Static Blog',
-					href: '/blog',
+					href: '/astro-blog/blog',
 					description:
 						'A Markdown/MDX blog built using Content Collections.',
-					image: '/images/examples/static-blog.jpg',
+					image: '/astro-blog/images/examples/static-blog.jpg',
 				},
 				{
 					title: 'Docs',
-					href: '/docs/getting-started',
+					href: '/astro-blog/docs/getting-started',
 					description:
 						'A Markdown/MDX docs site built using Content Collections.',
-					image: '/images/examples/documentation.jpg',
+					image: '/astro-blog/images/examples/documentation.jpg',
 				},
 				{
 					title: 'Anime List',
-					href: '/animes',
+					href: '/astro-blog/animes',
 					description:
 						'Fetch anime content from an graphql endpoint. Tabs component.',
-					image: '/images/examples/animes.jpg',
+					image: '/astro-blog/images/examples/animes.jpg',
 					launched: true,
 				},
 				{
 					title: 'Blog DB',
-					href: '/blog-db',
+					href: '/astro-blog/blog-db',
 					description:
 						'Blog built using Astro DB. With categories, views & likes.',
 					// image: "/images/examples/blog-db.jpg",
@@ -88,14 +88,14 @@ export const navMenuConfig: NavMenuConfig = {
 				},
 				{
 					title: 'Ecommerce',
-					href: '/products',
+					href: '/astro-blog/products',
 					disabled: true,
 					description: 'Ecommerce pages fetching data from an API.',
 					// image: "/images/examples/ecommerce.jpg",
 				},
 				{
 					title: 'Authentification',
-					href: '/auth',
+					href: '/astro-blog/auth',
 					description:
 						'Implement an authentification using Astro DB & Lucia',
 					// image: "/images/examples/auth.jpg",
