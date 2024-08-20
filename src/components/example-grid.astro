@@ -11,6 +11,7 @@ type Props = {
 };
 
 const { title, items } = Astro.props;
+import myImage1 from "../assets/releases/starlog-placeholder-1.jpg";
 ---
 
 <div id="" class="grid grid-cols-3 xl:grid-cols-4 py-8 gap-x-8 gap-y-6">
@@ -36,10 +37,8 @@ const { title, items } = Astro.props;
                 loading="eager"
                 width={740}
                 height={350}
-                src={
-                  item.image ? item.image : "/images/examples/placeholder.jpg"
-                }
-                alt="placeholder"
+                src={item.image || myImage1}
+                alt={item.title || "Placeholder image"}
                 class="size-full object-cover object-top"
               />
               {item.disabled && (
