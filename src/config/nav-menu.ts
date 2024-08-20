@@ -1,5 +1,8 @@
 import type {NavMenuConfig} from '@/types';
 
+import myImage1 from '../assets/releases/starlog-placeholder-1.jpg';
+import myImage2 from '../assets/releases/starlog-placeholder-2.jpg';
+
 export const navMenuConfig: NavMenuConfig = {
 	links: [{title: 'Portfolio', href: '/astro-blog/portfolio'}],
 	// pagesNav: [
@@ -61,21 +64,21 @@ export const navMenuConfig: NavMenuConfig = {
 					href: '/astro-blog/blog',
 					description:
 						'A Markdown/MDX blog built using Content Collections.',
-					image: '/astro-blog/images/examples/static-blog.jpg',
+					image: myImage1,
 				},
 				{
 					title: 'Docs',
 					href: '/astro-blog/docs/getting-started',
 					description:
 						'A Markdown/MDX docs site built using Content Collections.',
-					image: '/astro-blog/images/examples/documentation.jpg',
+					image: myImage2,
 				},
 				{
 					title: 'Anime List',
 					href: '/astro-blog/animes',
 					description:
 						'Fetch anime content from an graphql endpoint. Tabs component.',
-					image: '/astro-blog/images/examples/animes.jpg',
+					image: myImage1,
 					launched: true,
 				},
 				{
