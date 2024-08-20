@@ -61,21 +61,21 @@ export const navMenuConfig: NavMenuConfig = {
 					href: '/astro-blog/blog',
 					description:
 						'A Markdown/MDX blog built using Content Collections.',
-					image: './astro-blog/images/examples/static-blog.jpg',
+					image: '/astro-blog/images/examples/static-blog.jpg',
 				},
 				{
 					title: 'Docs',
 					href: '/astro-blog/docs/getting-started',
 					description:
 						'A Markdown/MDX docs site built using Content Collections.',
-					image: './astro-blog/images/examples/documentation.jpg',
+					image: '/astro-blog/images/examples/documentation.jpg',
 				},
 				{
 					title: 'Anime List',
 					href: '/astro-blog/animes',
 					description:
 						'Fetch anime content from an graphql endpoint. Tabs component.',
-					image: './astro-blog/images/examples/animes.jpg',
+					image: '/astro-blog/images/examples/animes.jpg',
 					launched: true,
 				},
 				{

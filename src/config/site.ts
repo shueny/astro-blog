@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
 	name: 'Shueny',
 	description:
 		'Website built using Astro v4 & shadcn/ui. Inspired by shadcn/taxonomy.',
-	url: 'https://shueny.github.io/astro-blog',
+	url: 'https://shueny.github.io/astro-blogger',
 	ogImage: 'https://astro-nomy.vercel.app/og.jpg',
 	links: {
 		instagram: 'https://www.instagram.com/shueny_wang/',
@@ -16,11 +16,11 @@ export const siteConfig: SiteConfig = {
 export const footerLinks: SidebarNavItem[] = [
 	{
 		title: 'Portfolio',
-		href: '#/astro-blog/portfolio',
+		href: '#',
 	},
 	{
 		title: 'Blogger',
-		href: '#/blogger',
+		href: '#',
 		// items: [
 		// 	{title: 'Security', href: '#'},
 		// 	{title: 'Customization', href: '#'},
