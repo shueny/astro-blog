@@ -43,7 +43,7 @@ const { category } = Astro.params;
         {categories.map((item) => (
           <li class="flex-shrink-0 snap-start">
             <a
-              href={`/blog/category/${item}`}
+              href={`/astro-blog/blog/category/${item}`}
               class={cn(
                 "capitalize",
                 item === category ? "select-none" : "",
