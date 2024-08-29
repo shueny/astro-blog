@@ -2,10 +2,7 @@
 title: "Local Chat System"
 description: "A local chat simulator for exams, built with TypeScript and React. Features include user login, real-time messaging, and persistent usernames across browser tabs. Follow the setup guide to clone, configure, and deploy the application."
 pubDate: "Aug 28 2024"
-image:
-  src: "/blog-placeholder-1.jpg"
-  alt: "A local chat simulator for exams, built with TypeScript and React. Features include user login, real-time messaging, and persistent usernames across browser tabs. Follow the setup guide to clone, configure, and deploy the application."
-cover: '/images/blog/local-chat-simulator.jpg'
+cover: 'https://shueny.github.io/astro-blog/local-chat-simulator.jpg'
 category: "project"
 ---
 
