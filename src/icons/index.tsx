@@ -30,6 +30,23 @@ export const Icons = {
       />
     </svg>
   ),
+  slogo: ({ ...props }: LucideProps) => (
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="2rem" height="2rem" viewBox="0 0 104 104"
+      preserveAspectRatio="xMidYMid meet">
+
+      <g transform="translate(0.000000,104) scale(0.100000,-0.1)"
+      fill="currentColor" stroke="none">
+      <path d="M415 1018 c-27 -5 -84 -26 -125 -46 -245 -120 -344 -415 -223 -662
+      82 -168 256 -279 439 -280 289 -1 525 251 501 535 -16 184 -117 331 -282 410
+      -106 51 -200 64 -310 43z m170 -169 c51 -14 110 -73 124 -124 14 -51 2 -65
+      -58 -65 -39 0 -51 5 -73 30 -27 31 -65 39 -86 18 -31 -31 -4 -64 116 -139 48
+      -30 68 -49 82 -82 56 -123 -25 -227 -177 -227 -102 0 -182 47 -204 120 -17 55
+      -2 70 66 70 49 0 53 -2 76 -37 19 -30 31 -38 53 -38 37 0 51 21 37 57 -6 17
+      -35 41 -80 68 -125 74 -167 144 -142 237 25 92 149 144 266 112z"/>
+      </g>
+    </svg>
+  ),
   hamburger: ({ ...props }: LucideProps) => (
     <svg
       stroke="currentColor"
