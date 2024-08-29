@@ -2,7 +2,7 @@
 title: "Third post"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 15 2022"
-cover: "/images/blog/placeholder-2.jpg"
+cover: "https://shueny.github.io/astro-blog/default-cover.jpg"
 category: "design"
 ---
 

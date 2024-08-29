@@ -1,5 +1,6 @@
 import type { NavMenuConfig } from '@/types';
 
+import defaultImg from '../assets/images/default-cover.jpg';
 import myImage1 from '../assets/images/starlog-placeholder-1.jpg';
 import myImage2 from '../assets/images/starlog-placeholder-2.jpg';
 
@@ -57,50 +58,65 @@ export const navMenuConfig: NavMenuConfig = {
   // ],
   examplesNav: [
     {
-      title: 'Examples',
+      title: 'Blogs',
       items: [
         {
-          title: 'Static Blog',
-          href: '/astro-blog/blog',
-          description: 'A Markdown/MDX blog built using Content Collections.',
-          image: myImage1,
-        },
-        {
-          title: 'Docs',
-          href: '/astro-blog/docs/getting-started',
+          title: 'Local Chat System',
+          href: '/astro-blog/blog/local-chat/',
           description:
-            'A Markdown/MDX docs site built using Content Collections.',
-          image: myImage2,
-        },
-        {
-          title: 'Anime List',
-          href: '/astro-blog/animes',
-          description:
-            'Fetch anime content from an graphql endpoint. Tabs component.',
-          image: myImage1,
+            'A local chat simulator for exams, built with TypeScript and React.',
+          image: defaultImg,
           launched: true,
         },
+        // {
+        //   title: 'Docs',
+        //   href: '/astro-blog/docs/getting-started',
+        //   description:
+        //     'A Markdown/MDX docs site built using Content Collections.',
+        //   image: myImage2,
+        // },
+        // {
+        //   title: 'Anime List',
+        //   href: '/astro-blog/animes',
+        //   description:
+        //     'Fetch anime content from an graphql endpoint. Tabs component.',
+        //   image: myImage1,
+        //   launched: true,
+        // },
+        // {
+        //   title: 'Blog DB',
+        //   href: '/astro-blog/blog-db',
+        //   description:
+        //     'Blog built using Astro DB. With categories, views & likes.',
+        //   // image: "/images/examples/blog-db.jpg",
+        //   disabled: true,
+        // },
+        // {
+        //   title: 'Ecommerce',
+        //   href: '/astro-blog/products',
+        //   disabled: true,
+        //   description: 'Ecommerce pages fetching data from an API.',
+        //   // image: "/images/examples/ecommerce.jpg",
+        // },
+        // {
+        //   title: 'Authentification',
+        //   href: '/astro-blog/auth',
+        //   description: 'Implement an authentification using Astro DB & Lucia',
+        //   // image: "/images/examples/auth.jpg",
+        //   disabled: true,
+        // },
+      ],
+    },
+    {
+      title: 'Docs',
+      items: [
         {
-          title: 'Blog DB',
-          href: '/astro-blog/blog-db',
+          title: 'FED',
+          href: '/astro-blog/docs/fed/',
           description:
-            'Blog built using Astro DB. With categories, views & likes.',
-          // image: "/images/examples/blog-db.jpg",
-          disabled: true,
-        },
-        {
-          title: 'Ecommerce',
-          href: '/astro-blog/products',
-          disabled: true,
-          description: 'Ecommerce pages fetching data from an API.',
-          // image: "/images/examples/ecommerce.jpg",
-        },
-        {
-          title: 'Authentification',
-          href: '/astro-blog/auth',
-          description: 'Implement an authentification using Astro DB & Lucia',
-          // image: "/images/examples/auth.jpg",
-          disabled: true,
+            'A local chat simulator for exams, built with TypeScript and React.',
+          image: defaultImg,
+          launched: true,
         },
       ],
     },

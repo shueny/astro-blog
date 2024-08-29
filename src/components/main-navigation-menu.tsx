@@ -16,7 +16,7 @@ import type { MenuItem } from '@/types'
 
 const links = navMenuConfig.links
 const pages = navMenuConfig?.pagesNav ? navMenuConfig.pagesNav[0] : []
-const examples = navMenuConfig.examplesNav[0]
+const navs = navMenuConfig.examplesNav
 
 export function MainNavigationMenu() {
   return (
@@ -76,16 +76,16 @@ export function MainNavigationMenu() {
           </NavigationMenuItem>
         )} */}
 
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>{examples.title}</NavigationMenuTrigger>
+        {navs.map((m,i)=> {return <NavigationMenuItem key={`${i}-${m.title}`}>
+          <NavigationMenuTrigger>{m.title}</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {examples.items?.map((example) => (
+              {m.items?.map((example) => (
                 <ListItem key={example.title} {...example} />
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem>})}
 
         {links.filter((l) => l.title !== 'Portfolio') ? (
           <NavigationMenuItem>
