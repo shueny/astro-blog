@@ -1,6 +1,7 @@
 ---
 import { buttonVariants } from "@/components/ui/button";
 import { docsConfig } from "@/config/docs";
+import { fedConfig } from "@/config/fed-system-design";
 import { cn } from "@/lib/utils";
 import { Icon } from "astro-icon/components";
 import type { CollectionEntry } from "astro:content";
@@ -11,6 +12,24 @@ type Props = {
 
 export function getPagerForDoc(slug: string) {
   const flattenedLinks = [...flatten(docsConfig.sidebarNav)];
+  let activeIndex = flattenedLinks.findIndex(
+    (link) => `/docs/${slug}` === link?.href
+  );
+
+  activeIndex = Math.max(activeIndex, 0);
+  const prev = activeIndex !== 0 ? flattenedLinks[activeIndex - 1] : null;
+  const next =
+    activeIndex !== flattenedLinks.length - 1
+      ? flattenedLinks[activeIndex + 1]
+      : null;
+  return {
+    prev,
+    next,
+  };
+}
+
+export function getPagerForFed(slug: string) {
+  const flattenedLinks = [...flatten(fedConfig.sidebarNav)];
   let activeIndex = flattenedLinks.findIndex(
     (link) => `/docs/${slug}` === link?.href
   );

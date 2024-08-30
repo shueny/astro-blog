@@ -6,6 +6,7 @@ import DocsPager from "@/components/pager.astro";
 import { DashboardTableOfContents } from "@/components/toc";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { docsConfig } from "@/config/docs";
+import { fedConfig } from "@/config/fed-system-design";
 import DocsLayout from "@/layouts/docs-layout.astro";
 import { getTableOfContents } from "@/lib/toc";
 import { Icon } from "astro-icon/components";
@@ -24,7 +25,8 @@ type Props = CollectionEntry<"docs">;
 const doc = Astro.props;
 const slug = Astro.params.slug;
 const toc = await getTableOfContents(doc.body);
-
+// / Determine which config to use based on the URL
+const config = slug.includes('fed') ? fedConfig : docsConfig;
 const { Content } = await doc.render();
 
 if (!slug || !doc) {
@@ -44,7 +46,7 @@ if (!slug || !doc) {
         class="fixed top-14 z-30 -ml-2 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 md:sticky md:block"
       >
         <ScrollArea className="h-full py-6 pr-6 lg:py-8" client:load>
-          <DocsSidebarNav items={docsConfig.sidebarNav} />
+          <DocsSidebarNav items={config.sidebarNav} />
         </ScrollArea>
       </aside>
       <main

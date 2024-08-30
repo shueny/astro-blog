@@ -1,0 +1,47 @@
+---
+title: Polly Widget
+description: Design a poll widget that can be easily embedded on websites, such as articles and blogs to allow website viewers to vote on options.
+---
+> [Front End System Design Guidebook - Poll Widget](https://www.greatfrontend.com/questions/system-design/poll-widget)
+
+## Question
+Design a poll widget that can be easily embedded on websites, such as articles and blogs to allow website viewers to vote on options.
+
+<img src="https://shueny.github.io/astro-blog/poll-widget-example.png" alt="Poll Widget Example" />
+
+
+### Requirements
+- The widget displays the following information:
+  - list of options for users to vote on.
+  - The latest number of votes for each option. This is only shown after the user has submitted a vote.
+- The following back end APIs are provided:
+  - Fetching of the poll results.
+  - Record a new vote on an existing poll option.
+  - Remove a vote from an existing poll option.
+- It should not require much effort for a website owner to embed a poll widget within their websites.
+
+<Callout icon="⚠️" type="info">
+
+Thanks to Shiki, highlighting is done at build time. No JavaScript is sent to the client for runtime highlighting.
+
+</Callout>
+
+## Example
+
+```ts showLineNumbers title="next.config.js" {3} /appDir: true/
+import { withContentlayer } from "next-contentlayer"
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
+  experimental: {
+    appDir: true,
+    serverComponentsExternalPackages: ["@prisma/client"],
+  },
+}
+
+export default withContentlayer(nextConfig)
+```

@@ -1,0 +1,70 @@
+---
+title: Front End System Design Guidebook
+description: Introduction to Front End System Design.
+---
+
+Check [here](https://www.greatfrontend.com/system-design)
+
+Front End System Design Guidebook.
+
+## Front End vs Back End System Design
+In traditional Software Engineer system design interviews, candidates will be asked to describe the architecture of a distributed system, usually involving web servers, load balancers, caches, databases, microservices, task queues, etc. For Front End Engineers, system design interviews are slightly different, there's more emphasis on what goes on in the client and API design between the client and the server, as opposed to what goes on in the back end.
+
+| Aspect                          | Front End System Design                                                                 | Back End System Design                        |
+|---------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------|
+| Gather requirements             | Required                                                                                | Required                                      |
+| Architecture/High-level design  | Distributed cloud services                                                              | Application/Component                         |
+| Back-of-the-envelope estimation | Required                                                                                | Not required                                  |
+| Components of the system        | Cloud services (e.g. Load balancer, Application server, Database, File storage, Caches, Message queues, CDN) | Application modules (Model, View, Controller) |
+| Data Model                      | SQL Schema                                                                              | Application state                             |
+| Type of APIs between components | Network (Any protocol)                                                                  | Network (HTTP, WebSocket), JavaScript functions|
+| Focus areas                     | Scalability, Reliability, Availability                                                  | Performance, User Experience, Accessibility, Internationalization |
+| Less important (Can treat as a black box) | Client                                                                                 | Server                                        |
+
+Read more on the differences between Front End and Back End System Design Interviews on Zhenghao's blog.
+
+For example, a classic question is to ask about designing a Twitter feed UI which can be asked during both back end and front end system interviews.
+
+Back end: Capacity estimation, designing the database schemas, how to ensure the services can scale with the traffic, how to generate a user's Twitter feed?
+Front end: How do you implement the interactions with a tweet, how to implement pagination in the feed, and how users can create new tweets?
+As you can see, the focus of front end system design interviews can be very different from back end and answering them well requires a different approach.
+
+## What you will learn in this guide
+
+Our Front End System Design guide is structured into two parts, you will first gain a deeper understanding system design interviews are about, then dive into some front end system design case studies using the RADIO framework.
+
+<div class="grid gap-4 mt-6">
+
+<Card href="/docs/fed-system-design">
+
+### Contentlayer
+
+Types of Front End System Design questions and examples.
+
+</Card>
+
+<Card  href="/docs/fed-system-design/system-design">
+
+### Components
+
+Framework for answering Front End System Design questions.
+
+</Card>
+
+<Card  href="/docs/fed-system-design/questions">
+
+### Code Blocks
+
+How you are being evaluated and what interviewers are looking out for.
+
+</Card>
+
+<Card  href="/docs/documentation/components">
+
+### Style Guide
+
+Common mistakes to avoid.
+
+</Card>
+
+</div>

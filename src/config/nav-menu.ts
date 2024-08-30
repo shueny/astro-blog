@@ -111,10 +111,10 @@ export const navMenuConfig: NavMenuConfig = {
       title: 'Docs',
       items: [
         {
-          title: 'FED',
-          href: '/astro-blog/docs/fed/',
+          title: 'FED System Design',
+          href: '/astro-blog/docs/fed-system-design/system-design',
           description:
-            'A local chat simulator for exams, built with TypeScript and React.',
+            'Learn useful techniques and how to approach the top front end system design questions, written by ex-interviewers at FAANG.',
           image: defaultImg,
           launched: true,
         },
